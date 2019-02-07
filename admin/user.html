@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="../assets/css/all.min.css" />
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="../assets/css/animate.min.css" />
+
+  <!-- my css -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>dashboard | user</title>
+</head>
+
+<body>
+  <div class="wj-container">
+    <nav class="wj-sidebar">
+      <div class="wj-sidebar-wrapper">
+        <div class="wj-user">
+          <img src="../admin/img/admin.jpg" />
+          <h5>Padli Yulian</h5>
+        </div>
+        <a href="index.html">
+          <i class="fas fa-tachometer-alt"></i>
+          Dashboard
+        </a>
+        <a href="header.html">
+          <i class="fas fa-newspaper"></i>
+          Header
+        </a>
+        <a href="gallery.html">
+          <i class="fas fa-images"></i>
+          Gallery
+        </a>
+        <a href="menu.html">
+          <i class="fas fa-utensils"></i>
+          Menu
+        </a>
+        <a href="contact.html">
+          <i class="fas fa-address-card"></i>
+          Contact
+        </a>
+        <a href="about.html">
+          <i class="fas fa-info-circle"></i>
+          About
+        </a>
+        <a href="footer.html">
+          <i class="fas fa-shoe-prints"></i>
+          Footer
+        </a>
+      </div>
+    </nav>
+
+    <div class="wj-content">
+      <nav class="wj-navbar">
+        <a href="#" class="wj-bar-icon">
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="index.html" class="wj-logo-icon">
+          <img src="../assets/img/logo.png" />
+        </a>
+        <a href="message.html" class="wj-user-icon" data-toggle="tooltip" title="Message">
+          <span class="badge badge-pill badge-danger">6</span>
+          <i class="fas fa-mail-bulk"></i>
+        </a>
+        <a href="user.html" class="wj-user-icon">
+          <i class="fas fa-users active"></i>
+        </a>
+        <a href="../index.html" class="wj-logout-icon">
+          <i class="fas fa-sign-out-alt"></i>
+        </a>
+      </nav>
+      <div class="wj-content-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item" aria-current="page">
+                    Dashboard
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    User
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-12 d-flex justify-content-end">
+              <a href="user-edit.html" class="btn btn-success">Add</a>
+            </div>
+            <div class="col-12">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Thumb</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Username</th>
+                      <th scope="col">Password</th>
+                      <th scope="col">Level</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><img src="img/admin.jpg" width="50" /></td>
+                      <td>padliyulian@gmail.com</td>
+                      <td>admin</td>
+                      <td>admin</td>
+                      <td>admin</td>
+                      <td>
+                        <a href="user-edit.html" class="btn btn-primary">Edit</a>
+                        <button class="btn btn-danger">Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td><img src="../assets/img/m1.jpg" width="50" /></td>
+                      <td>padliyulian@ymail.com</td>
+                      <td>user</td>
+                      <td>user123</td>
+                      <td>operator</td>
+                      <td>
+                        <a href="user-edit.html" class="btn btn-primary">Edit</a>
+                        <button class="btn btn-danger">Delete</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

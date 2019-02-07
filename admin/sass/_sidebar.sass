@@ -1,0 +1,86 @@
+// mobile first
+.wj-sidebar
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    width: 0
+    background-image: url(../img/sidebar.jpg)
+    background-size: cover
+    background-position: center center
+    transition: 1s
+    z-index: 100
+
+    &::after
+        content: ''
+        display: block
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+        width: 100%
+        height: 100%
+        position: absolute
+        bottom: 0
+
+    .wj-sidebar-wrapper
+        z-index: 101
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        overflow-y: auto
+        overflow-x: hidden
+
+        .wj-user
+            padding-top: 15px
+            padding-bottom: 10px
+
+            img
+                width: 120px
+                border-radius: 50%
+                border: 3px solid white
+                margin: 0 60px
+                box-shadow: 0 1px 1px black
+
+            h5 
+                color: white    
+                text-shadow: 0 1px 1px black
+                width: 240px
+                text-align: center
+                margin: 5px 0
+
+        a.active
+            background-color: rgba(0,0,0,0.5)            
+
+        a
+            display: block
+            color: white
+            text-transform: uppercase
+            padding: 10px 
+            border-radius: 5px
+            text-decoration: none
+            width: 200px
+            margin: 0 21px 2px 21px
+            text-shadow: 0 1px 1px black
+
+            &:hover
+                background-color: rgba(0,0,0,0.5)  
+
+            i 
+                margin-right: 10px
+
+            i.fa-utensils
+                margin-right: 15px   
+
+            i.fa-shoe-prints
+                margin-right: 6px      
+
+.wj-sidebar.wj-toggle
+    width: 260px
+
+// // for desktop 
+@media (min-width: 992px)
+    nav.wj-sidebar
+        width: 260px
+
+    .wj-sidebar.wj-toggle
+        width: 0    

@@ -9,7 +9,6 @@ html {
 
 .navbar {
   -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
   font-family: "Lobster", cursive;
 }
@@ -27,23 +26,19 @@ html {
     z-index: 100;
     position: relative;
   }
-
   .wj-header .wj-navbar {
     background-color: transparent !important;
   }
-
   .navbar-brand img {
     height: 60px;
     -webkit-filter: drop-shadow(1px 1px 2px black);
-    filter: drop-shadow(1px 1px 2px black);
+            filter: drop-shadow(1px 1px 2px black);
   }
-
   .nav-item .nav-link {
     font-size: 1.2rem;
     color: white !important;
     text-shadow: 1px 1px 2px black;
   }
-
   .nav-item .nav-link:hover::after {
     content: '';
     display: block;
@@ -74,15 +69,13 @@ html {
 .jumbotron .container img {
   width: 100%;
   -webkit-filter: drop-shadow(1px 1px 2px black);
-  filter: drop-shadow(1px 1px 2px black);
+          filter: drop-shadow(1px 1px 2px black);
 }
 
 .jumbotron::after {
   content: '';
   display: block;
   background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
   width: 100%;
   height: 100%;
@@ -103,8 +96,7 @@ html {
 .wj-gallery .container .wj-gallery-box.wj-show-el {
   opacity: 1;
   -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
+          transform: translateX(0);
 }
 
 .wj-gallery .container .wj-gallery-box {
@@ -113,10 +105,8 @@ html {
   overflow: hidden;
   opacity: 0;
   -webkit-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  transform: translateX(50px);
+          transform: translateX(50px);
   -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -138,7 +128,6 @@ html {
   width: 100%;
   height: 100%;
   -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
   transition: 0.7s;
 }
 
@@ -174,7 +163,7 @@ html {
   border: 3px solid white;
   margin-top: 0;
   -webkit-box-shadow: 1px 1px 2px black;
-  box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
   border-radius: 10px;
 }
 
@@ -220,7 +209,7 @@ html {
   border: 3px solid white;
   margin-top: -10px;
   -webkit-box-shadow: 1px 1px 2px black;
-  box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
   border-radius: 10px;
 }
 
@@ -237,8 +226,6 @@ html {
   content: '';
   display: block;
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
-  background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
-  background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
   background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
   width: 100%;
   height: 100%;
@@ -263,7 +250,6 @@ html {
   font-size: 3em;
   color: rgba(0, 0, 0, 0.7);
   -webkit-transition: .7s;
-  -o-transition: .7s;
   transition: .7s;
   text-shadow: none;
 }
@@ -289,7 +275,6 @@ html {
   margin: 0;
   left: 0;
   -webkit-transition: 2s;
-  -o-transition: 2s;
   transition: 2s;
 }
 
@@ -307,10 +292,9 @@ html {
   border: 5px solid white;
 }
 
-.section-wj-menu .container .row .wj-menu .wj-wrap div .image:hover+h4 {
+.section-wj-menu .container .row .wj-menu .wj-wrap div .image:hover + h4 {
   -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .section-wj-menu .container .row .wj-menu .wj-wrap div h4 {
@@ -321,7 +305,6 @@ html {
   text-align: center;
   width: 100%;
   -webkit-transition: 1s;
-  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -335,7 +318,7 @@ html {
   border: 3px solid white;
   margin-top: -10px;
   -webkit-box-shadow: 1px 1px 2px black;
-  box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
   border-radius: 10px;
 }
 
@@ -352,8 +335,6 @@ html {
   content: '';
   display: block;
   background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
   width: 100%;
   height: 100%;
@@ -381,7 +362,7 @@ html {
   border: 3px solid white;
   margin-top: -10px;
   -webkit-box-shadow: 1px 1px 2px black;
-  box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
   border-radius: 10px;
 }
 
@@ -413,7 +394,7 @@ html {
   border: 3px solid white;
   margin-top: -10px;
   -webkit-box-shadow: 1px 1px 2px black;
-  box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
   border-radius: 10px;
 }
 
@@ -424,7 +405,7 @@ img.wj-top-btn {
   right: 20px;
   width: 50px;
   -webkit-filter: drop-shadow(1px 1px 2px black);
-  filter: drop-shadow(1px 1px 2px black);
+          filter: drop-shadow(1px 1px 2px black);
 }
 
 img.wj-top-btn:hover {
@@ -437,83 +418,64 @@ img.wj-top-btn:hover {
     margin-top: -86px;
     background-position-y: center;
   }
-
   div.jumbotron .container {
     margin-top: 100px;
     width: 50% !important;
   }
-
   section.wj-gallery .container {
     margin-top: -40px;
   }
-
   section.wj-gallery .container .wj-gallery-title h1 {
     font-size: 55px;
   }
-
   section.wj-gallery .container .wj-gallery-title hr {
     width: 20%;
   }
-
   section#menu .container {
     padding-top: 40px;
   }
-
   section#menu .container .row .wj-menu .wj-wrap {
     width: 200%;
   }
-
   section#menu .container .wj-menu-title h1 {
     font-size: 55px;
   }
-
   section#menu .container .wj-menu-title hr {
     width: 20%;
   }
-
   section.wj-contact {
     padding-top: 40px;
   }
-
   section.wj-contact .container .wj-contact-title h1 {
     font-size: 55px;
     margin-top: 20px;
   }
-
   section.wj-contact .container .wj-contact-title hr {
     width: 20%;
   }
-
   section.wj-about {
     background-position-y: center;
     padding-top: 40px;
   }
-
   section.wj-about .container p {
     font-size: 1.2rem;
   }
-
   section.wj-about .container .wj-about-title h1 {
     font-size: 55px;
     margin-top: 20px;
   }
-
   section.wj-about .container .wj-about-title hr {
     width: 20%;
   }
-
   section.wj-follow .container .row a span {
     font-size: 4em !important;
   }
-
   section.wj-follow .container p {
     font-size: 1.2rem;
   }
-
   section.wj-follow .container .wj-follow-title h1 {
     font-size: 55px;
   }
-
   section.wj-follow .container .wj-follow-title hr {
     width: 20%;
   }
@@ -544,3 +506,4 @@ img.wj-top-btn:hover {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
+/*# sourceMappingURL=main.css.map */

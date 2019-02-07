@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="../assets/css/all.min.css" />
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="../assets/css/animate.min.css" />
+
+  <!-- my css -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>dashboard | user-edit</title>
+</head>
+
+<body>
+  <div class="wj-container">
+    <nav class="wj-sidebar">
+      <div class="wj-sidebar-wrapper">
+        <div class="wj-user">
+          <img src="../admin/img/admin.jpg" />
+          <h5>Padli Yulian</h5>
+        </div>
+        <a href="index.html">
+          <i class="fas fa-tachometer-alt"></i>
+          Dashboard
+        </a>
+        <a href="header.html">
+          <i class="fas fa-newspaper"></i>
+          Header
+        </a>
+        <a href="gallery.html">
+          <i class="fas fa-images"></i>
+          Gallery
+        </a>
+        <a href="menu.html">
+          <i class="fas fa-utensils"></i>
+          Menu
+        </a>
+        <a href="contact.html">
+          <i class="fas fa-address-card"></i>
+          Contact
+        </a>
+        <a href="about.html">
+          <i class="fas fa-info-circle"></i>
+          About
+        </a>
+        <a href="footer.html">
+          <i class="fas fa-shoe-prints"></i>
+          Footer
+        </a>
+      </div>
+    </nav>
+
+    <div class="wj-content">
+      <nav class="wj-navbar">
+        <a href="#" class="wj-bar-icon">
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="index.html" class="wj-logo-icon">
+          <img src="../assets/img/logo.png" />
+        </a>
+        <a href="message.html" class="wj-user-icon" data-toggle="tooltip" title="Message">
+          <span class="badge badge-pill badge-danger">6</span>
+          <i class="fas fa-mail-bulk"></i>
+        </a>
+        <a href="user.html" class="wj-user-icon">
+          <i class="fas fa-users"></i>
+        </a>
+        <a href="../index.html" class="wj-logout-icon">
+          <i class="fas fa-sign-out-alt"></i>
+        </a>
+      </nav>
+      <div class="wj-content-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item" aria-current="page">
+                    Dashboard
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    User
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Edit
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-12">
+              <form>
+                <div class="form-group">
+                  <label>Upload Photo</label><br>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>User Level</label><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Admin</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Operator</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="padliyulian@gmail.com">
+                </div>
+                <div class="form-group">
+                  <label for="user">Username</label>
+                  <input type="text" class="form-control" id="user" placeholder="admin">
+                </div>
+                <div class="form-group">
+                  <label for="oldpwd">Password</label>
+                  <input type="password" class="form-control mb-2" id="oldpwd" placeholder="old password">
+                  <input type="password" class="form-control mb-2" id="newpwd" placeholder="new password">
+                  <input type="password" class="form-control mb-2" id="confpwd" placeholder="repeat new password">
+                </div>
+                <input type="submit" class="btn btn-info btn-block" value="Update">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
