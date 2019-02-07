@@ -1,0 +1,392 @@
+// mobile first
+
+// section login
+.wj-login-form
+    font-family: $primary-font     
+
+// section jumbotron
+.jumbotron
+    // background-attachment: fixed
+    background-image: url(../img/hero-img.jpg)
+    background-size: cover
+    position: relative
+    margin-bottom: 0
+    margin-top: 66px
+
+    .container
+        z-index: 1
+        position: relative
+
+        img
+            width: 100%
+            filter: drop-shadow(1px 1px 2px black)
+
+    &::after
+        content: ''
+        display: block
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+        width: 100%
+        height: 100%
+        position: absolute
+        bottom: 0
+
+// section gallery
+.wj-gallery
+    font-family: $primary-font
+    background-image: url(../img/bg-wood.jpg) 
+    padding-bottom: 10px
+
+    .container
+        margin-top: -20px
+
+        .wj-gallery-box.wj-show-el
+            opacity: 1
+            transform: translateX(0)
+
+        .wj-gallery-box
+            position: relative
+            margin-bottom: 10px
+            overflow: hidden
+            opacity: 0
+            transform: translateX(50px)
+            transition: 0.5s ease-in-out  
+
+            &:hover 
+                cursor: pointer
+                .wj-gallery-info
+                    bottom: 0
+
+            .wj-gallery-info
+                text-align: center
+                color: $primary-color
+                position: absolute
+                background-color: rgba(0,0,0,0.7)
+                bottom: -100%
+                padding-top: 25%
+                width: 100%
+                height: 100%
+                transition: 0.7s    
+
+        .modal-content
+                position: relative
+                span.close
+                    position: absolute
+                    right: -10px
+                    top: -10px
+                    padding: 10px
+                    z-index: 1
+                    background: $primary-color
+                    border-radius: 50%
+                    height: 30px
+                    width: 30px
+                    opacity: 1 
+                    line-height: 13px
+
+                    &:hover
+                        color: red
+
+        .wj-gallery-title    
+            h1
+                color: $primary-color
+                font-family: $primary-font
+                text-shadow: 1px 1px 2px black   
+
+            hr
+                border: 3px solid $primary-color   
+                margin-top: 0 
+                box-shadow: 1px 1px 2px black
+                border-radius: 10px  
+
+// section contact
+.wj-contact
+    font-family: $primary-font
+    background-image: url(../img/bg-wood.jpg) 
+    background-size: cover
+    padding: 10px 0
+
+    .container
+        #map
+            border: 5px solid #663300   
+            width: 100%
+            height: 400px
+
+        .list-group-item.active
+            background-color: #663300  
+            border: none 
+            padding-top: 11px
+            padding-bottom: 6px
+
+        .list-group-item   
+            a 
+                text-decoration: none
+
+                span 
+                    color: #663300
+
+                    &:hover
+                        color: #00A2B7
+
+        .wj-contact-title    
+            h1
+                color: $primary-color
+                font-family: $primary-font
+                text-shadow: 1px 1px 2px black   
+
+            hr
+                border: 3px solid $primary-color   
+                margin-top: -10px   
+                box-shadow: 1px 1px 2px black
+                border-radius: 10px  
+
+// section menu    
+.section-wj-menu
+    font-family: $primary-font
+    background-attachment: fixed
+    background-image: url(../img/bg-menu.jpg) 
+    background-size: cover
+    padding: 10px 0
+    position: relative
+
+    &::after
+        content: ''
+        display: block
+        background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+        width: 100%
+        height: 100%
+        position: absolute
+        bottom: 0
+
+    .container 
+        position: relative
+        z-index: 1
+        padding-top: 10px
+
+        .row 
+            .wj-menu
+                overflow: hidden
+                position: relative
+
+                .wj-arrow  
+                    position: absolute 
+                    top: 38%
+                    font-size: 3em
+                    color: rgba(0,0,0,0.7)
+                    transition: .7s
+                    text-shadow: none
+
+                    &:hover
+                        cursor: pointer
+                        color: $primary-color
+                        text-shadow: 1px 1px 1px black
+
+                .wj-arrow-left 
+                    left: 15px
+
+                .wj-arrow-right 
+                    right: 15px
+
+                .wj-wrap
+                    width: 1000%
+                    height: 100%
+                    position: relative
+                    margin: 0
+                    left: 0
+                    transition: 2s
+
+                    div
+                        position: relative
+                        float: left
+                        width: 10%
+                        color: $primary-color
+
+                        .image   
+                            position: relative
+                            width: 100%
+                            border-radius: 50%
+                            border: 5px solid $primary-color
+
+                            &:hover + h4 
+                                transform: rotate(360deg)    
+
+                        h4 
+                            position: absolute   
+                            left: 0
+                            top: 45%
+                            text-shadow: 1px 1px 1px black
+                            text-align: center
+                            width: 100%
+                            transition: 1s
+
+        .wj-menu-title    
+            h1
+                color: $primary-color
+                font-family: $primary-font
+                text-shadow: 1px 1px 2px black 
+
+            hr
+                border: 3px solid $primary-color   
+                margin-top: -10px   
+                box-shadow: 1px 1px 2px black
+                border-radius: 10px 
+
+// section about
+.wj-about
+    font-family: $primary-font
+    background-attachment: fixed
+    background-image: url(../img/bg-about.jpg) 
+    background-size: cover
+    padding: 10px 0
+    position: relative
+
+    &::after
+        content: ''
+        display: block
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+        width: 100%
+        height: 100%
+        position: absolute
+        bottom: 0
+
+    .container
+        position: relative
+        z-index: 1
+
+        p
+            color: $primary-color
+            text-shadow: 1px 1px 2px black
+
+    .wj-about-title    
+        h1
+            color: $primary-color
+            font-family: $primary-font
+            text-shadow: 1px 1px 2px black 
+
+        hr
+            border: 3px solid $primary-color   
+            margin-top: -10px   
+            box-shadow: 1px 1px 2px black
+            border-radius: 10px 
+        
+// section follow
+.wj-follow
+    font-family: $primary-font
+    background-image: url(../img/bg-coffee.jpg) 
+    padding: 10px 0
+
+    .container
+        a
+            text-decoration: none
+
+            span 
+                color: $primary-color
+
+                &:hover
+                    color: #00A2B7    
+
+    .wj-follow-title    
+        h1
+            color: $primary-color
+            font-family: $primary-font
+            text-shadow: 1px 1px 2px black 
+
+        hr
+            border: 3px solid $primary-color   
+            margin-top: -10px   
+            box-shadow: 1px 1px 2px black
+            border-radius: 10px
+
+// top button
+img.wj-top-btn
+    display: none
+    position: fixed            
+    bottom: 20px
+    right: 20px
+    width: 50px
+    filter: drop-shadow(1px 1px 2px black)
+
+    &:hover
+        cursor: pointer
+        opacity: 0.8
+
+// desktop
+@media (min-width: 768px)
+    div.jumbotron
+        margin-top: -86px
+        background-position-y: center 
+
+        .container 
+            margin-top: 100px
+            img
+            width: 50% !important
+
+    section.wj-gallery
+        .container
+            margin-top: -40px  
+
+            .wj-gallery-title
+                h1
+                    font-size: 55px
+
+                hr
+                    width: 20%  
+
+    section#menu
+        .container 
+            padding-top: 40px
+            .row 
+                .wj-menu 
+                    .wj-wrap
+                        width: 200%
+
+            .wj-menu-title
+                h1
+                    font-size: 55px
+
+                hr
+                    width: 20%  
+                                     
+            
+    section.wj-contact
+        padding-top: 40px
+
+        .container
+            .wj-contact-title
+                h1
+                    font-size: 55px
+                    margin-top: 20px
+
+                hr
+                    width: 20%       
+
+    section.wj-about
+        background-position-y: center
+        padding-top: 40px
+
+        .container
+            p 
+                font-size: 1.2rem
+
+            .wj-about-title
+                h1
+                    font-size: 55px
+                    margin-top: 20px
+
+                hr
+                    width: 20%         
+
+    section.wj-follow
+        .container
+            .row
+                a
+                    span
+                        font-size: 4em !important
+
+            p 
+                font-size: 1.2rem
+
+            .wj-follow-title
+                h1
+                    font-size: 55px
+
+                hr
+                    width: 20%                                 
