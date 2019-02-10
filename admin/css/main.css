@@ -164,4 +164,12 @@
 .wj-content .wj-content-container .container {
   overflow-x: auto;
 }
+
+.wj-content .wj-content-container .container .row .wj-card {
+  font-weight: bold;
+}
+
+.wj-content .wj-content-container .container .row .wj-card .wj-card-body {
+  font-size: 3em;
+}
 /*# sourceMappingURL=main.css.map */

@@ -23,13 +23,11 @@
 </head>
 
 <body>
-
   <div class="wj-container">
-
     <nav class="wj-sidebar">
       <div class="wj-sidebar-wrapper">
         <div class="wj-user">
-          <img src="../admin/img/admin.jpg">
+          <img src="../admin/img/admin.jpg" />
           <h5>Padli Yulian</h5>
         </div>
         <a href="index.html" class="active">
@@ -69,7 +67,7 @@
           <i class="fas fa-bars"></i>
         </a>
         <a href="index.html" class="wj-logo-icon">
-          <img src="../assets/img/logo.png">
+          <img src="../assets/img/logo.png" />
         </a>
         <a href="message.html" class="wj-user-icon" data-toggle="tooltip" title="Message">
           <span class="badge badge-pill badge-danger">6</span>
@@ -88,87 +86,76 @@
             <div class="col-12">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Dashboard
+                  </li>
                 </ol>
               </nav>
             </div>
-            <div class="col-md-4">
-              <div class="card text-white bg-primary mb-3">
-                <div class="card-header">Lorem</div>
-                <div class="card-body">
-                  <div class="card-title">Lorem</div>
+            <div class="col-md-6">
+              <div class="card text-white bg-primary mb-3 wj-card">
+                <div class="card-header">
+                  <i class="fas fa-users"></i>
+                  <span>Total Visitors</span>
+                </div>
+                <div class="card-body bg-light text-primary">
                   <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
+                    <p class="wj-card-body">2,300.192</p>
+                    <p>201,345 Online</p>
                   </div>
+                </div>
+                <div class="card-footer" style="display: flex; justify-content: space-between">
+                  <span>
+                    <i class="fas fa-desktop"></i>
+                    <span>28%</span>
+                  </span>
+                  <span class="mx-2">
+                    <i class="fas fa-tablet-alt"></i>
+                    <span>11%</span>
+                  </span>
+                  <span>
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>61%</span>
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card text-white bg-secondary mb-3">
-                <div class="card-header">Lorem</div>
-                <div class="card-body">
-                  <div class="card-title">Lorem</div>
-                  <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
-                  </div>
+            <div class="col-md-6">
+              <div class="card text-white bg-warning mb-3">
+                <div class="card-header">
+                  <i class="fas fa-traffic-light"></i>
+                  <span>Page Trafic</span>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-white bg-info mb-3">
-                <div class="card-header">Lorem</div>
-                <div class="card-body">
-                  <div class="card-title">Lorem</div>
+                <div class="card-body bg-light">
                   <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
+                    <canvas id="top-trafic"></canvas>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
-              <div class="card text-white bg-success mb-3">
-                <div class="card-header">Lorem</div>
-                <div class="card-body">
-                  <div class="card-title">Lorem</div>
+            <div class="col-md-6">
+              <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">
+                  <i class="fas fa-globe-americas"></i>
+                  <span>Top Browser</span>
+                </div>
+                <div class="card-body bg-light">
                   <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
+                    <canvas id="top-browser"></canvas>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card text-white bg-warning mb-3">
-                <div class="card-header">Lorem</div>
-                <div class="card-body">
-                  <div class="card-title">Lorem</div>
-                  <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="card text-white bg-danger mb-3">
-                <div class="card-header">Lorem</div>
-                <div class="card-body">
-                  <div class="card-title">Lorem</div>
-                  <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
-                  </div>
+                <div class="card-header">
+                  <i class="fas fa-desktop"></i>
+                  <span>Top Device</span>
+                </div>
+                <div class="card-body bg-light">
+                  <canvas id="top-device"></canvas>
                 </div>
               </div>
             </div>
@@ -180,9 +167,9 @@
                 <div class="card-body">
                   <div class="card-title">Lorem</div>
                   <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit rem nam doloremque perferendis possimus tempora
+                    aperiam debitis unde beatae? Ratione?
                   </div>
                 </div>
               </div>
@@ -193,9 +180,9 @@
                 <div class="card-body">
                   <div class="card-title">Lorem</div>
                   <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit rem nam doloremque perferendis possimus tempora
+                    aperiam debitis unde beatae? Ratione?
                   </div>
                 </div>
               </div>
@@ -206,9 +193,9 @@
                 <div class="card-body">
                   <div class="card-title">Lorem</div>
                   <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem nam doloremque perferendis
-                    possimus
-                    tempora aperiam debitis unde beatae? Ratione?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit rem nam doloremque perferendis possimus tempora
+                    aperiam debitis unde beatae? Ratione?
                   </div>
                 </div>
               </div>
@@ -217,13 +204,13 @@
         </div>
       </div>
     </div>
-
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
   <script src="../assets/js/popper.min.js"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="js/Chart.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
